@@ -17,25 +17,31 @@
 	<header>
 		<div class="top-banner bg-primary">
 			<!-- Top banner logo and cetificate images -->
-			<div id="top-banner-logo" class="top-banner-logo" title="Logo e imágenes de los certificados otorgados al Hospital Metropolitano">
-				<img src="./images/banner-logo.svg" alt="Logo del Hospital Metropolitano" />
+			<div id="logo-wrapper top-banner-logo" class="top-banner-logo" title="Logo e imágenes de los certificados otorgados al Hospital Metropolitano">
+				<img src="./images/banner-logo.svg" alt="Logo del Hospital Metropolitano" />	
 				<img src="./images/banner-medal.png" alt="Imagen de la medalla otorgada al Hospital Metropolitano por la aprobación de los estándares de calidad sugeridos por la Joint Commission International" />
 				<img src="./images/banner-certificate.jpg" alt="Imagen de la certificación de excelencia en atención centrada en la persona de Planetree International" />
 			</div>
 			
 			<!-- Top banner search bar -->
 			<div class="top-banner-search-bar">
-			  <input id="search-input" type="text" placeholder="Ingrese aquí su consulta" title="Espacio para ingresar una consulta de búsqueda en la página" />
-			  <button type="submit" title="Botón para realizar una búsqueda en la página a partir de la consulta ingresada en el espacio respectivo" aria-label="Haga clic aquí para buscar la consulta ingresada">Buscar</button>
+				<form onsubmit="event.preventDefault();" role="search" class="my-form">
+					<input class="search-input" id="search-input" type="search" placeholder="Ingrese aquí su consulta" title="Espacio para ingresar una consulta de búsqueda en la página" autofocus required/>    
+				</form>
+				<button class="search-button" type="submit" title="Botón para realizar una búsqueda en la página a partir de la consulta ingresada en el espacio respectivo" aria-label="Haga clic aquí para buscar la consulta ingresada">
+					<span style="color: #1976D2;">
+						<i alt="ícono de búsqueda" class="fa-solid fa-2x fa-magnifying-glass"></i>
+					</span>		
+				</button>
 			</div>
-			
+
 			<!-- Top banner user account -->
 			<div class="top-banner-user-account">
 				<a href="#" title="Enlace para ir hacia la cuenta de usuario para iniciar o cerrar sesión" aria-label="Haga clic aquí para iniciar o cerrar sesión de la cuenta de usuario">
-					<span style="color: whitesmoke">
+					<span style="color: whitesmoke; margin-right: 2rem;">
 						<i alt="ícono de usuario" class="fa-solid fa-3x fa-circle-user"></i>
 					</span>		
-					<p aria-hidden="true">Cuenta de usuario</p>
+					<p aria-hidden="true" hidden="true">Cuenta de usuario</p>
 				</a>				
 			</div>
 		</div>
