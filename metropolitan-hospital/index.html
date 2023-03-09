@@ -65,8 +65,21 @@
 		<!-- CENTRAL CONTENT -->
 		<div class="central-content bg-light">
 			<!-- MAIN CONTENT -->
-			<div class="card text-center p-3 mb-2 main-content bg-primary">
-				<h1 class="text-light">Bienvenidos al sitio web del Hospital Metropolitano</h1>
+			<div class="my-top-card text-center p-3 mb-2 main-content bg-primary">
+				<div class="login-card">
+					<h1 class="text-dark">Bienvenidos al sitio web del Hospital Metropolitano</h1>
+					<form>
+					  <div class="form-group">
+						<label for="username">Usuario</label>
+						<input type="text" id="username" name="username" required>
+					  </div>
+					  <div class="form-group">
+						<label for="password">Contraseña</label>
+						<input type="password" id="password" name="password" required>
+					  </div>
+					  <button class="login-button" type="submit">Iniciar Sesión</button>
+					</form>
+				  </div>
 			</div>			
 			
 			<!-- FOOTER -->
@@ -76,8 +89,9 @@
 					<section>
 						<h4>Enlaces de interés</h4>
 						<ul class="section-list">
-							<li><a href="#">Enlace 1</a></li>
-							<li><a href="#">Enlace 2</a></li>
+							<li><a href="#">Programa de internado</a></li>
+							<li><a href="#">Emergencias</a></li>
+							<li><a href="#">Laboratorios</a></li>
 						</ul>
 					</section>
 					
@@ -85,36 +99,50 @@
 					<section>
 					  <h4>Sobre nosotros</h4>
 					  <ul class="section-list">
-						<li><a href="#">Enlace 3</a></li>
-						<li><a href="#">Enlace 4</a></li>
+						<li><a href="#">Especialidades</a></li>
+						<li><a href="#">Médicos</a></li>
+						<li><a href="#">Trabaja con nostros</a></li>
 					  </ul>
 					</section>
 					
 					<!-- Section of accesibility options -->
 					<section>
-					  <h4>Accesibilidad</h4>
+					  <h4>Extenciones</h4>
 					  <ul class="section-list">
-						<li><a href="#">Enlace 5</a></li>
-						<li><a href="#">Enlace 6</a></li>
+						<li><a href="#">Servicio al cliente</a></li>
+						<li><a href="#">Laboratorio 2317</a></li>
 					  </ul>
 					</section>
 				</div>
 				
 				<div class="footer-right bg-primary">
-					<h4 class="text-light">Medios de contacto</h4>
-					<a href="#">
-						<img src="./images/user-account.jpg" alt=""/>	
-					</a>
-					<a href="#">
-						<img src="./images/user-account.jpg" alt=""/>	
-					</a>
-					<a href="#">
-						<img src="./images/user-account.jpg" alt=""/>	
-					</a>
+					<section>
+						<div class="media-text-box">
+							<h4 class="text-light">Medios de contacto</h4>
+						</div>
+						<div>
+							<a href="#">
+								<span style="color: whitesmoke; margin-right: 2rem;">
+									<i alt="ícono de teléfono" class="fa-solid fa-2x fa-phone"></i>
+								</span>	
+							</a>
+							<a href="#">
+								<span style="color: whitesmoke; margin-right: 2rem;">
+									<i alt="ícono de WhatsApp" class="fa-solid fa-2x fa-brands fa-whatsapp"></i>
+								</span>	
+							</a>
+							<a href="#">
+								<span style="color: whitesmoke; margin-right: 2rem;">
+									<i alt="ícono de messenger" class="fa-solid fa-2x fa-brands fa-facebook-messenger"></i>
+								</span>		
+							</a>
+						</div>
+					</section>
 				</div>
 			</div>	
-			
-			<h5 class="copyright bg-primary text-light">Copyright JAR © 2023</h5>
+			<div class="copyright-box">
+				<h5 class="copyright bg-primary text-light">Copyright JAR © 2023</h5>
+			</div>
 		</div>		
 	</div>
 	
