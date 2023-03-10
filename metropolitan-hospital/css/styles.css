@@ -1,3 +1,7 @@
+body * {
+	-webkit-font-smoothing: antialiased;
+}
+
 * {
 	box-sizing: border-box;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,6 +16,20 @@
   --height: 3rem;
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
   --background-color: #004db3;
+}
+
+.my-title {
+    color: var(--background-color);
+    width: 100%;
+}
+
+.my-title:after {
+	content: "";
+	display: block;
+	margin-top: 2px;
+	width: 115px;
+	height: 3px;
+	background-color: #ff8201;
 }
 
 .top-banner {
@@ -297,6 +315,24 @@ header {
 	border-radius: 20px;
 }
 
+.services-card {
+	margin: 3rem auto;
+	height: fit-content;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.15);
+	padding: 20px;
+	max-width: 90%;
+}
+
+.services-card img {
+	height: auto;
+	width: 100%;
+	box-shadow: 4px 4px 20px rgba(0,0,0,0.4);
+	margin-right: 5rem;
+	margin-left: 5rem;
+}
+
 .login-card {
 	margin: 3rem auto;
 	height: 80%;
@@ -398,7 +434,7 @@ header {
     float: left;
     border-radius: 10px;
     max-height: 200px;
-    max-weight: 240px;
+    max-width: 240px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
