@@ -418,18 +418,23 @@ header {
 	border-radius: 10px;
 	width: 60%;
 	height: 100px;
-	border: 2px dashed #ccc;
+	border: 2px dashed #ddd;
 	text-align: center;
 	line-height: 100px;
 	font-size: 24px;
-	color: #aaa;
+	color: var(--background-color);
 	margin: 50px auto;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+#drop-zone h3 {
+	padding-top: 1.6rem;
 }
 
 #drop-zone.dragover {
-  border-color: #000;
+  	border-color: var(--background-color);
 }
 
 .services-images {
