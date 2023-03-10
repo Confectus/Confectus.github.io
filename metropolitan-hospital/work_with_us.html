@@ -193,6 +193,16 @@
       fileInput.click();
     });
 
+    // Open file dialog when label is clicked
+    dropZone.addEventListener('keydown', handleClickOrEnter);
+
+    function handleClickOrEnter(event) {
+      // Verificar si se presionó Enter
+      if (event.type === 'keydown' && event.code === 'Enter') {
+        fileInput.click();
+      }
+    }
+
     // Handle selected file
     fileInput.addEventListener('change', function() {
       var file = fileInput.files[0];
