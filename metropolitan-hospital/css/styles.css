@@ -162,11 +162,14 @@ header {
 	background-color: #ccc;
 	flex-basis: 15%;
 	height: 100%;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-top: 20px;
 }
 
 .my-nav ul {
 	list-style: none;
-	margin: 20px 0;
+	margin: 0px 0;
 }
 
 .my-nav ul li {
@@ -175,10 +178,15 @@ header {
 
 .my-nav ul li a {
 	font-size: large;
-	color: #000;
+	color: var(--background-color);
+	font-weight: bold;
 	display: block;	
 	padding: 10px;
 	text-decoration: none;
+	border-radius: 10px;
+	border-bottom: 2px solid var(--background-color);
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 	transition: background-color 0.3s;
 }
 
@@ -189,6 +197,7 @@ header {
 	font-weight: bold;
 	transition: background-color 0.3s;
 	transition: font-size 0.3s cubic-bezier();
+	border-radius: 10px;
 }
 
 /* === CENTRAL CONTENT === */
@@ -269,6 +278,7 @@ header {
 
 .section-list {
 	list-style: none;
+	padding-top: 10px;
 }
 
 .section-list li a {
@@ -278,6 +288,9 @@ header {
 
 .section-list li a:hover {
 	color: #ffffff;
+	padding: 0px 0px 0px 10px;
+	transition: all 200ms ease-out;
+	font-weight: bold;
 }
 
 .my-top-card {
@@ -353,6 +366,7 @@ header {
 	border-radius: 5px;
 	font-size: 18px;
 	margin-top: 1rem;
+	margin-bottom: 2rem;
 	padding: 10px 20px;
 	cursor: pointer;
 	transition: background-color 0.3s ease-in-out;
@@ -363,17 +377,18 @@ header {
 }
 
 #drop-zone {
-      border-radius: 10px;
-      width: 635px;
-      height: 100px;
-      border: 2px dashed #ccc;
-      text-align: center;
-      line-height: 100px;
-      font-size: 24px;
-      color: #aaa;
-      margin: 50px auto;
-      margin-top: 1rem;
-    }
+	border-radius: 10px;
+	width: 60%;
+	height: 100px;
+	border: 2px dashed #ccc;
+	text-align: center;
+	line-height: 100px;
+	font-size: 24px;
+	color: #aaa;
+	margin: 50px auto;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
 
 #drop-zone.dragover {
   border-color: #000;
