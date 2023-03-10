@@ -183,9 +183,12 @@ header {
 }
 
 .my-nav ul li a:hover {
-	background-color: #007bff;
+	background-color: var(--background-color);
 	color: #ffffff;
 	font-size: larger;
+	font-weight: bold;
+	transition: background-color 0.3s;
+	transition: font-size 0.3s cubic-bezier();
 }
 
 /* === CENTRAL CONTENT === */
