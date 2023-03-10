@@ -4,165 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="El hospital Metropolitano es un referente de excelencia médica. Actualmente, es el complejo médico más completo y moderno del país.">
+    <meta name="description" content="El hospital Metropolitano es un referente de excelencia médica. Actualmente, es el complejo médico más completo y moderno del país.">
     <title>Hospital Metropolitano - Inicio de Sesión</title>
-	
-	<link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body onload="document.getElementById('top-banner-logo').focus()">
-    <!-- TOP BANNER -->
-	<header>
-		<div class="top-banner">
-			<h1 hidden="true">Barra superior</h1>
-			<!-- Top banner logo and cetificate images -->
-			<div id="logo-wrapper top-banner-logo" class="top-banner-logo" title="Logo e imágenes de los certificados otorgados al Hospital Metropolitano">
-				<img src="./images/banner-logo.svg" alt="Logo del Hospital Metropolitano" />	
-				<img src="./images/banner-medal.png" alt="Medalla aprobación de los estándares de calidad de la Joint Commission International" />
-				<img src="./images/banner-certificate.jpg" alt="Certificación de excelencia de Planetree International" />
-			</div>
-			
-			<!-- Top banner search bar -->
-			<div class="top-banner-search-bar">
-				<form onsubmit="event.preventDefault();" role="search" class="my-form">
-					<label for="search-input" class="text-light">Buscar</label>
-					<input class="search-input" id="search-input" type="search" placeholder="Ingrese aquí su consulta" title="Espacio para ingresar una consulta de búsqueda en la página" autofocus required/>    
-				</form>
-				<button class="search-button" type="submit" title="Botón para realizar una búsqueda en la página a partir de la consulta ingresada en el espacio respectivo" aria-label="Haga clic aquí para buscar la consulta ingresada">
+<!-- TOP BANNER -->
+<header>
+    <div class="top-banner">
+        <h1 hidden="true">Barra superior</h1>
+        <!-- Top banner logo and cetificate images -->
+        <div id="logo-wrapper top-banner-logo" class="top-banner-logo" title="Logo e imágenes de los certificados otorgados al Hospital Metropolitano">
+            <img src="./images/banner-logo.svg" alt="Logo del Hospital Metropolitano" />
+            <img src="./images/banner-medal.png" alt="Medalla aprobación de los estándares de calidad de la Joint Commission International" />
+            <img src="./images/banner-certificate.jpg" alt="Certificación de excelencia de Planetree International" />
+        </div>
+
+        <!-- Top banner search bar -->
+        <div class="top-banner-search-bar">
+            <form onsubmit="event.preventDefault();" role="search" class="my-form">
+                <label for="search-input" class="text-light">Buscar</label>
+                <input class="search-input" id="search-input" type="search" placeholder="Ingrese aquí su consulta" title="Espacio para ingresar una consulta de búsqueda en la página" autofocus required/>
+            </form>
+            <button class="search-button" type="submit" title="Botón para realizar una búsqueda en la página a partir de la consulta ingresada en el espacio respectivo" aria-label="Haga clic aquí para buscar la consulta ingresada">
 					<span style="color: #004DB3;">
 						<i alt="ícono de búsqueda" class="fa-solid fa-2x fa-magnifying-glass"></i>
-					</span>		
-				</button>
-			</div>
+					</span>
+            </button>
+        </div>
 
-			<!-- Top banner user account -->
-			<div class="top-banner-user-account">
-				<a href="#" title="Enlace para ir hacia la cuenta de usuario para iniciar o cerrar sesión" aria-label="Haga clic aquí para iniciar o cerrar sesión de la cuenta de usuario">
+        <!-- Top banner user account -->
+        <div class="top-banner-user-account">
+            <a href="login.html" title="Enlace para ir hacia la cuenta de usuario para iniciar o cerrar sesión" aria-label="Haga clic aquí para iniciar o cerrar sesión de la cuenta de usuario">
 					<span style="color: whitesmoke; margin-right: 2rem;">
 						<i alt="ícono de usuario" class="fa-solid fa-3x fa-circle-user"></i>
-					</span>		
-					<p aria-hidden="true" hidden="true">Cuenta de usuario</p>
-				</a>				
-			</div>
-		</div>
-	</header>
-	
-	<!-- GENERAL CONTAINER -->
-	<div class="general-container">
-	<!-- Left menu -->
-		<nav class="my-nav bg-light">
-			<ul>
-				<li><a href="#" title="Enlace para ir hacia la página de inicio" aria-label="Haga clic aquí para ir hacia la página de inicio">Inicio</a></li>
-				<li><a href="#" title="Enlace para ir hacia la página de COVID-19" aria-label="Haga clic aquí para ir hacia la página de COVID-19">COVID-19</a></li>				
-				<li><a href="#" title="Enlace para ir hacia la página de emergencias" aria-label="Haga clic aquí para ir hacia la página de emergencias">Emergencias</a></li>
-				<li><a href="#" title="Enlace para ir hacia la página de citas médicas" aria-label="Haga clic aquí para ir hacia la página de citas médicas">Citas Médicas</a></li>
-				<li><a href="#" title="Enlace para ir hacia la página de laboratorio" aria-label="Haga clic aquí para ir hacia la página de laboratorio">Laboratorio</a></li>
-				<li><a href="#" title="Enlace para ir hacia la página de especialidades" aria-label="Haga clic aquí para ir hacia la página de especialidades">Especialidades</a></li>				
-				<li><a href="#" title="Enlace para ir hacia la página de contactos" aria-label="Haga clic aquí para ir hacia la página de contactos">Contactos</a></li>
-			</ul>
-		</nav>		  
-		
-		<!-- CENTRAL CONTENT -->
-		<div class="central-content bg-light">
-			<!-- MAIN CONTENT -->
-			<div class="my-top-card text-center p-3 mb-2 main-content" style="background-color: #004DB3;">
-				<h2 class="text-light">¡Bienvenidos al sitio web del Hospital Metropolitano!</h2>
-				<div class="login-card">
-					<img src="./images/login-logo.svg" alt="Logo del Hospital Metropolitano, apartado de inicio de sesión" />
-					<form>
-					  <div class="form-group">
-						<label for="username">Usuario</label>
-						<input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
-					  </div>
-					  <div class="form-group">
-						<label for="password">Contraseña</label>
-						<input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
-					  </div>
-					  <button class="login-button" type="submit">Iniciar sesión</button>
-					</form>
-				  </div>
-			</div>			
-			
-			<!-- FOOTER -->
-			<div class="footer text-light" style="background-color: #004DB3;">
-				<h3 hidden="true">Pie de Página</h3>
-				<div class="footer-left">
-					<!-- Section of links of interest -->
-					<section>
-						<h4>Enlaces de interés</h4>
-						<ul class="section-list">
-							<li><a href="#">Programa de internado</a></li>
-							<li><a href="#">Emergencias</a></li>
-							<li><a href="#">Laboratorios</a></li>
-						</ul>
-					</section>
-					
-					<!-- Section about us -->
-					<section>
-					  <h4>Sobre nosotros</h4>
-					  <ul class="section-list">
-						<li><a href="#">Especialidades</a></li>
-						<li><a href="#">Médicos</a></li>
-						<li><a href="work_with_us.html">Trabaja con nosotros</a></li>
-					  </ul>
-					</section>
-					
-					<!-- Section of accesibility options -->
-					<section>
-					  <h4>Extenciones</h4>
-					  <ul class="section-list">
-						<li><a href="#">Servicio al cliente</a></li>
-						<li><a href="#">Laboratorio 2317</a></li>
-					  </ul>
-					</section>
-				</div>
-				
-				<div class="footer-right">
-					<section>
-						<div class="media-text-box">
-							<h4 class="text-light">Medios de contacto</h4>
-						</div>
-						<div>
-							<a href="#">
+					</span>
+                <p aria-hidden="true" hidden="true">Cuenta de usuario</p>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- GENERAL CONTAINER -->
+<div class="general-container">
+    <!-- Left menu -->
+    <nav class="my-nav bg-light">
+        <ul>
+            <li><a href="index.html" title="Enlace para ir hacia la página de inicio" aria-label="Haga clic aquí para ir hacia la página de inicio">Inicio</a></li>
+            <li><a href="#" title="Enlace para ir hacia la página de COVID-19" aria-label="Haga clic aquí para ir hacia la página de COVID-19">COVID-19</a></li>
+            <li><a href="#" title="Enlace para ir hacia la página de emergencias" aria-label="Haga clic aquí para ir hacia la página de emergencias">Emergencias</a></li>
+            <li><a href="#" title="Enlace para ir hacia la página de citas médicas" aria-label="Haga clic aquí para ir hacia la página de citas médicas">Citas Médicas</a></li>
+            <li><a href="#" title="Enlace para ir hacia la página de laboratorio" aria-label="Haga clic aquí para ir hacia la página de laboratorio">Laboratorio</a></li>
+            <li><a href="#" title="Enlace para ir hacia la página de especialidades" aria-label="Haga clic aquí para ir hacia la página de especialidades">Especialidades</a></li>
+            <li><a href="#" title="Enlace para ir hacia la página de contactos" aria-label="Haga clic aquí para ir hacia la página de contactos">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <!-- CENTRAL CONTENT -->
+    <div class="central-content bg-light">
+        <!-- MAIN CONTENT -->
+        <div class="my-top-card text-center p-3 mb-2 main-content" style="background-color: #004DB3;">
+            <h2 class="text-light">Servicios y beneficios</h2>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                <div class="services-background">
+                    <div style="float: left; text-align: center;">
+                        <img src="./images/sobrepeso.webp" class="services-images">
+                        <p>Cirugía Baríatrica</p>
+                    </div>
+                    <div style="float: left; text-align: center;">
+                        <img src="./images/mother.webp" class="services-images">
+                        <p>Metromaternidad</p>
+                    </div>
+                    <div style="float: left; text-align: center;">
+                        <img src="./images/care.jpg" class="services-images">
+                        <p>Chequeos Médicos</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-light">Noticias de Interés</h2>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zFFUVzF5-lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer text-light" style="background-color: #004DB3;">
+            <h3 hidden="true">Pie de Página</h3>
+            <div class="footer-left">
+                <!-- Section of links of interest -->
+                <section>
+                    <h4>Enlaces de interés</h4>
+                    <ul class="section-list">
+                        <li><a href="#">Programa de internado</a></li>
+                        <li><a href="#">Emergencias</a></li>
+                        <li><a href="#">Laboratorios</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section about us -->
+                <section>
+                    <h4>Sobre nosotros</h4>
+                    <ul class="section-list">
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Médicos</a></li>
+                        <li><a href="work_with_us.html">Trabaja con nosotros</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section of accesibility options -->
+                <section>
+                    <h4>Extenciones</h4>
+                    <ul class="section-list">
+                        <li><a href="#">Servicio al cliente</a></li>
+                        <li><a href="#">Laboratorio 2317</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="footer-right">
+                <section>
+                    <div class="media-text-box">
+                        <h4 class="text-light">Medios de contacto</h4>
+                    </div>
+                    <div>
+                        <a href="#">
 								<span style="color: whitesmoke; margin-right: 2rem;">
 									<i alt="ícono de teléfono" class="fa-solid fa-2x fa-phone"></i>
 								</span>
-								<p aria-hidden="true" hidden="true">Contactos telefónicos del Hospital Metropolitano</p>
-							</a>
-							<a href="#">
+                            <p aria-hidden="true" hidden="true">Contactos telefónicos del Hospital Metropolitano</p>
+                        </a>
+                        <a href="#">
 								<span style="color: whitesmoke; margin-right: 2rem;">
 									<i alt="ícono de WhatsApp" class="fa-solid fa-2x fa-brands fa-whatsapp"></i>
 								</span>
-								<p aria-hidden="true" hidden="true">Contactos por WhatsApp del Hospital Metropolitano</p>
-							</a>
-							<a href="#">
+                            <p aria-hidden="true" hidden="true">Contactos por WhatsApp del Hospital Metropolitano</p>
+                        </a>
+                        <a href="#">
 								<span style="color: whitesmoke; margin-right: 2rem;">
 									<i alt="ícono de messenger" class="fa-solid fa-2x fa-brands fa-facebook-messenger"></i>
 								</span>
-								<p aria-hidden="true" hidden="true">Contactos por Messenger del Hospital Metropolitano</p>
-							</a>
-						</div>
-					</section>
-				</div>
-			</div>	
-			<div class="copyright-box">
-				<h5 style="background-color: #004DB3;" class="copyright text-light">Copyright JAR © 2023</h5>
-			</div>
-		</div>		
-	</div>
-	
-	<!-- Script to point the same label when recharging the page -->
-	<script>
+                            <p aria-hidden="true" hidden="true">Contactos por Messenger del Hospital Metropolitano</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="copyright-box">
+            <h5 style="background-color: #004DB3;" class="copyright text-light">Copyright JAR © 2023</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Script to point the same label when recharging the page -->
+<script>
 		window.addEventListener('load', function() {
 			location.hash = '#top-banner-logo';
 		});
 	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/8f833f2473.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8f833f2473.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
