@@ -11,6 +11,11 @@
   --color-light: #fff;
   --height: 3rem;
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  --background-color: #004db3;
+}
+
+.top-banner {
+	background: var(--background-color);
 }
 
 .my-form {
@@ -324,7 +329,7 @@ header {
 }
 
 .login-button {
-	background-color: #007bff;
+	background-color: var(--background-color);
 	color: #fff;
 	border: none;
 	border-radius: 5px;
