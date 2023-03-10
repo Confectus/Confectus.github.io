@@ -329,8 +329,10 @@ header {
 	height: auto;
 	width: 100%;
 	box-shadow: 4px 4px 20px rgba(0,0,0,0.4);
-	margin-right: 5rem;
-	margin-left: 5rem;
+	margin-top: 2rem;
+	margin-right: 3rem;
+	margin-bottom: 2rem;
+	margin-left: 3rem;
 }
 
 .login-card {
