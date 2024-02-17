@@ -1,6 +1,6 @@
 [
   {
-    "id": "saludos",
+    "id": 1,
     "title": "Saludos",
     "visibility": false,
     "response_set_id": 9,
@@ -10,16 +10,10 @@
       "Hey",
       "¿Qué tal?",
       "Necesito ayuda"
-    ],
-    "responses": [
-      {
-        "type": "text",
-        "content": "Hola, ¿en qué puedo ayudarte?"
-      }
     ]
   },
   {
-    "id": "tipos-matriculas",
+    "id": 2,
     "title": "Tipos de Matrículas",
     "response_set_id": 10,
     "utterances": [
@@ -33,31 +27,6 @@
       "¿Aún existe la matrícula excepcional?",
       "Quiero una matrícula excepcional",
       "¿Puedo solicitar una matrícula excepcional?"
-    ],
-    "responses": [
-      {
-        "type": "text",
-        "content": "Durante este periodo académico existen tres tipos de matrículas disponibles: \"Matrícula Ordinaria\", \"Matrícula Extraordinaria\" y \"Matrícula Especial\"."
-      },
-      {
-        "type": "text",
-        "content": "Si necesitas conocer más detalles sobre algún tipo de matrícula puedes hacerlo mediante los siguientes mensajes:"
-      },
-      {
-        "type": "action",
-        "action": "matricula-ordinaria",
-        "name": "Matrícula Ordinaria"
-      },
-      {
-        "type": "action",
-        "action": "matricula-extraordinaria",
-        "name": "Matrícula Extraordinaria"
-      },
-      {
-        "type": "action",
-        "action": "matricula-especial",
-        "name": "Matrícula Especial"
-      }
     ]
   }
 ]
